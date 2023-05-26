@@ -1,3 +1,5 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import { error } from '@sveltejs/kit';
 import { images } from '$lib/images';
 import type { RequestHandler } from './$types';
@@ -8,5 +10,7 @@ export const GET = (async ({ params }) => {
 		throw error(404);
 	}
 
-	return new Response(img.image);
+	return new Response(
+		await fs.readFile(path.join(process.cwd(), 'static/photos', params.imageName))
+	);
 }) satisfies RequestHandler;
