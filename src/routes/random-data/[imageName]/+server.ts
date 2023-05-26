@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { error, json } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 import { images } from '$lib/images';
 import type { RequestHandler } from './$types';
 
