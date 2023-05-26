@@ -1,0 +1,69 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+	--fonts: 'Inter', -apple-system, Noto Sans, Roboto, Ubuntu, Segoe UI, sans-serif;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+code {
+	font-family: monospace;
+	background: #283142;
+	color: #71d74c;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+body {
+	background: #0e0f0f;
+	color: #d5d8db;
+	font-family: var(--fonts);
+	font-size: 16px;
+}
+
+a {
+	color: #4797ec;
+}
+
+button {
+	font-family: var(--fonts);
+	color: #dbe3e3;
+	background: #262d33;
+	border: none;
+	border-radius: 6px;
+	padding: 0.8rem 1rem;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.1s, color 0.1s;
+	letter-spacing: 0.04rem;
+
+	&:hover {
+		color: #28a3bf;
+		background: #2e3f4d;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a {
+		font-size: 32px;
+		color: white;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
