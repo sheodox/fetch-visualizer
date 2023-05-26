@@ -77,9 +77,9 @@
 		imageCredit = imageMetadata.credit;
 		imageHref = imageMetadata.href;
 
-		const imageRes = await fetch(`/random-data/${imageMetadata.fileName}`);
-		// purposely not setting imageSrc to the url we fetch so it is visualized
-		imageSrc = URL.createObjectURL(await imageRes.blob());
+		imageSrc = URL.createObjectURL(
+			new Blob([new Uint8Array([...atob(imageMetadata.image)].map((char) => char.charCodeAt(0)))])
+		);
 		fetchingImage = false;
 	}
 </script>
