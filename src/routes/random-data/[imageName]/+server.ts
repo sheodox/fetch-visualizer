@@ -10,7 +10,7 @@ export const GET = (async ({ params }) => {
 	}
 
 	const imageBuffer = await fs.readFile(
-		path.join(process.cwd(), './static/photos/', params.imageName)
+		path.join(process.cwd(), 'static/photos', params.imageName)
 	);
 
 	return new Response(imageBuffer);
