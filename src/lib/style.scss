@@ -32,7 +32,7 @@ a {
 button {
 	font-family: var(--fonts);
 	color: #dbe3e3;
-	background: #262d33;
+	background: #262d33cc;
 	border: none;
 	border-radius: 6px;
 	padding: 0.8rem 1rem;
@@ -43,8 +43,12 @@ button {
 	letter-spacing: 0.04rem;
 
 	&:hover {
-		color: #28a3bf;
-		background: #2e3f4d;
+		color: #559dc8;
+	}
+
+	&:disabled {
+		background: #17181c;
+		color: #344462;
 	}
 }
 

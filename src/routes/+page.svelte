@@ -32,8 +32,10 @@
 </p>
 
 <h2>Try it out!</h2>
-<button on:click={doFetching}>Post random data</button>
-<button on:click={getImage} disabled={fetchingImage}>Fetch an image (could take minutes)</button>
+<div>
+	<button on:click={doFetching}>Post random data</button>
+	<button on:click={getImage} disabled={fetchingImage}>Fetch an image (could take minutes)</button>
+</div>
 
 {#if imageSrc}
 	<a href={imageHref}>{imageCredit}</a>
