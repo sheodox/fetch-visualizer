@@ -15,7 +15,10 @@
 	not use a visual indicator!
 </p>
 <p>
-	Fetch Visualizer is a <a href="https://svelte.dev/docs">Svelte</a> component that wraps your
+	<a href="https://github.com/sheodox/fetch-visualizer/blob/main/src/lib/FetchVisualizer.svelte"
+		>Fetch Visualizer</a
+	>
+	is a <a href="https://svelte.dev/docs">Svelte</a> component that wraps your
 	<code>fetch</code> calls, and all request and response data must first be shown on a canvas as a grid
 	of pixels, each being either white or black to represent the binary representation of the data. Yes,
 	finally the world of programming didn't have to stop at tying racing game physics to framerate, now
